@@ -1,0 +1,10 @@
+{
+    "name": "goenergies/yii-audit",
+    "authors": [
+        {
+            "name": "greg",
+            "email": "greg.stadermann@goenergies.com"
+        }
+    ],
+    "require": {}
+}
