@@ -11,8 +11,5 @@
       "goenergies\\yii2\\audit\\": "src"
     }
   },
-  "extra": {
-    "bootstrap": "goenergies\\yii2\\audit\\Bootstrap"
-  }
     "require": {}
 }
