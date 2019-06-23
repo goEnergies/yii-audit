@@ -14,7 +14,7 @@ class m170126_000001_alter_audit_mail extends Migration
         } elseif ($this->db->driverName === 'sqlsrv') {
             $this->alterColumn(self::TABLE, 'data', 'VARBINARY(MAX)');
         } else {
-            $this->alterColumn(self::TABLE, 'data', 'BYTEA');
+            $this->alterColumn(self::TABLE, 'data', 'VARBINARY(MAX)');
         }
     }
 }
