@@ -76,7 +76,7 @@ NavBar::end();
         <hr>
         <?= date('Y-m-d H:i:s'); ?>
         <br>
-        <?= $this->render('@goenergies/yii2/audit/views/_audit_entry_id', ['style' => '']); ?>
+        <?= $this->render('@vendor/goenergies/yii-audit/src/views/_audit_entry_id', ['style' => '']); ?>
     </footer>
 </div>
 
