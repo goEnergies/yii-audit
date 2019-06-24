@@ -13,9 +13,9 @@
   },
     "require": {
      "2amigos/yii2-chartjs-widget": "^2.0.1"
-    }
+    },
      "extra": {
-    "bootstrap": "bedezign\\yii2\\audit\\Bootstrap"
+    "bootstrap": "goenergies\\yii2\\audit\\Bootstrap"
   }
 }
 
