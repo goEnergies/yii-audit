@@ -13,7 +13,7 @@ class AuditAsset extends AssetBundle
     /**
      * @inheritdoc
      */
-    public $sourcePath = '@goenergies/yii2/audit/web/assets';
+    public $sourcePath = '@vendor/goenergies/yii-audit/src/web/assets';
 
     /**
      * @inheritdoc
