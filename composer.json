@@ -6,15 +6,16 @@
             "email": "greg.stadermann@goenergies.com"
         }
     ],
-    "autoload": {
-    "psr-4": {
-      "goenergies\\yii2\\audit\\": "src"
-    }
-  },
+  
     "require": {
      "2amigos/yii2-chartjs-widget": "^2.0.1"
     },
-     "extra": {
+    "autoload": {
+    "psr-4": {
+      "goenergies\\yii2\\audit\\": "src"
+        }
+    },
+    "extra": {
     "bootstrap": "goenergies\\yii2\\audit\\Bootstrap"
   }
 }
