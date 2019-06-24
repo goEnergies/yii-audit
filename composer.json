@@ -11,5 +11,8 @@
       "goenergies\\yii2\\audit\\": "src"
     }
   },
-    "require": {}
+    "require": {
+     "2amigos/yii2-chartjs-widget": "^2.0.1"
+    }
 }
+
