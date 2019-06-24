@@ -19,7 +19,7 @@ class JSLoggingAsset extends AssetBundle
     /**
      * @var string
      */
-    public $sourcePath = '@goenergies/yii2/audit/web/assets';
+    public $sourcePath = '@vendor/goenergies/yii-audit/src/web/assets/javascript/';
 
     /**
      * @var array
