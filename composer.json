@@ -1,6 +1,5 @@
 {
     "name": "goenergies/yii-audit",
-    // package type
     "type": "yii2-extension",
     "description": "yii2 audit trail",
     "authors": [
@@ -15,7 +14,6 @@
     },
     "autoload": {
     "psr-4": {
-      // @goenergies/yii2/audit/
       "goenergies\\yii2\\audit\\": "src"
         }
     },
