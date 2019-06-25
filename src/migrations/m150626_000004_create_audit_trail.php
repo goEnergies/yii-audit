@@ -16,9 +16,9 @@ class m150626_000004_create_audit_trail extends Migration
             'action'    => Schema::TYPE_STRING . ' NOT NULL',
             'model'     => Schema::TYPE_STRING . ' NOT NULL',
             'model_id'  => Schema::TYPE_STRING . ' NOT NULL',
-            'field'     => Schema::TYPE_STRING,
-            'old_value' => Schema::TYPE_TEXT,
-            'new_value' => Schema::TYPE_TEXT,
+            'field'     => Schema::TYPE_STRING . ' NULL',
+            'old_value' => Schema::TYPE_TEXT . ' NULL',
+            'new_value' => Schema::TYPE_TEXT . ' NULL',
             'created'   => Schema::TYPE_DATETIME . ' NOT NULL',
         ], ($this->db->driverName === 'mysql' ? 'CHARACTER SET utf8 COLLATE utf8_general_ci ENGINE=InnoDB' : null));
 
