@@ -36,7 +36,7 @@ trait PanelTrait
      */
     public function getLabel()
     {
-        return $this->getName() . ' <small>(' . count($this->data) . ')</small>';
+        return $this->getName();
     }
 
     /**

@@ -17,9 +17,9 @@ if (isset($panel->data['general'])) {
 $parametersContent .= $this->render('table', [
     'caption' => 'Routing',
     'values' => [
-        'Route' => $panel->data['route'],
-        'Action' => $panel->data['action'],
-        'Parameters' => $panel->data['actionParams'],
+        'Route' => $panel->data['route'] ?? '',
+        'Action' => $panel->data['action'] ?? '',
+        'Parameters' => $panel->data['actionParams'] ?? '',
     ],
 ]);
 
@@ -39,7 +39,7 @@ if (isset($panel->data['COOKIE'])) {
     $parametersContent .= $this->render('table', ['caption' => '$_COOKIE', 'values' => $panel->data['COOKIE']]);
 }
 
-$parametersContent .= $this->render('table', ['caption' => 'Request Body', 'values' => $panel->data['requestBody']]);
+$parametersContent .= $this->render('table', ['caption' => 'Request Body', 'values' => $panel->data['requestBody'] ?? '']);
 
 $items[] = [
     'label' => 'Parameters',
@@ -48,8 +48,8 @@ $items[] = [
 $items[] = [
     'label' => 'Headers',
     'content' => $this->render('table',
-            ['caption' => 'Request Headers', 'values' => $panel->data['requestHeaders']])
-        . $this->render('table', ['caption' => 'Response Headers', 'values' => $panel->data['responseHeaders']]),
+             ['caption' => 'Request Headers', 'values' => $panel->data['requestHeaders'] ?? ''])
+        . $this->render('table', ['caption' => 'Response Headers', 'values' => $panel->data['responseHeaders'] ?? '']),
 ];
 if (isset($panel->data['SESSION'], $panel->data['flashes'])) {
     $items[] = [
